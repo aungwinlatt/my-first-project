@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <link rel="stylesheet" href="login-css/style.css" />
+  </head>
+  <body>
+    <div class="hero">
+      <div class="logo">
+        <a href="../index.html"
+          ><img class="drop-shadow" src="icon/logo.png" alt="logo"
+        /></a>
+      </div>
+      <div class="form-box">
+        <div class="button-box">
+          <div id="btn"></div>
+          <button type="button" class="login-btn" onclick="login()">
+            Login
+          </button>
+          <button type="button" class="login-btn" onclick="register()">
+            Register
+          </button>
+        </div>
+        <div class="social-icons">
+          <img
+            style="width: 40px"
+            src="icon/facebook.png"
+            alt="facebook-icon"
+          />
+          <img
+            style="width: 38px"
+            src="icon/google (1).png"
+            alt="google-icon"
+          />
+        </div>
+        <form id="login-form" class="input-group">
+          <input
+            type="text"
+            class="input-txt"
+            placeholder="User Name"
+            required
+          />
+          <input
+            type="text"
+            class="input-txt"
+            placeholder="Enter Password"
+            required
+          />
+          <input type="checkbox" class="ck-box" /><span>Remember Password</span>
+          <button type="submit" class="submit-btn">Log in</button>
+        </form>
+        <form id="register-form" class="input-group">
+          <input
+            type="text"
+            class="input-txt"
+            placeholder="User Name"
+            required
+          />
+          <input type="text" class="input-txt" placeholder="Email" required />
+          <input
+            type="text"
+            class="input-txt"
+            placeholder="Enter Password"
+            required
+          />
+          <input type="checkbox" class="ck-box" /><span
+            >I agree to the terms and conditions</span
+          >
+          <button type="submit" class="submit-btn">Register</button>
+        </form>
+      </div>
+    </div>
+    <script>
+      var x = document.getElementById("login-form");
+      var y = document.getElementById("register-form");
+      var z = document.getElementById("btn");
+
+      function register() {
+        x.style.left = "-400px";
+        y.style.left = "50px";
+        z.style.left = "110px";
+      }
+      function login() {
+        x.style.left = "50px";
+        y.style.left = "450px";
+        z.style.left = "0";
+      }
+    </script>
+  </body>
+</html>
